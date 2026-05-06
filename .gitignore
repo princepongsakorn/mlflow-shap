@@ -1,0 +1,53 @@
+# Build / distribution
+build/
+dist/
+*.egg-info/
+*.egg
+wheels/
+.eggs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# Type checkers
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MLflow / SHAP local artifacts created during testing
+mlruns/
+mlartifacts/
+*.pkl
+shap_explainer/
