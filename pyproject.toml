@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mlflow-shap"
-version = "0.1.0"
+version = "0.1.1"
 description = "Log and load SHAP explainers as MLflow artifacts with a one-liner."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -28,7 +28,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
-    "mlflow>=2.0",
+    "mlflow>=2.0,<4",
     "shap>=0.42",
     "joblib>=1.2",
 ]

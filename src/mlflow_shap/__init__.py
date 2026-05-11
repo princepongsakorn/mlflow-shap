@@ -13,7 +13,7 @@ from __future__ import annotations
 from .exceptions import ExplainerCreationError, MLflowSHAPError, NoActiveRunError
 from .explainer import load_explainer, log_explainer
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "log_explainer",

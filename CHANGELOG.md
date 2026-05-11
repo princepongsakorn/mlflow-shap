@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-05-11
+
+### Changed
+- Pin `mlflow` dependency to `>=2.0,<4` to prevent accidental MLflow 3.x install when the user's tracking server is still on 2.x (`/api/2.0/mlflow/logged-models` 404 from a 2.x server otherwise).
+
 ## [0.1.0] - 2026-05-06
 
 ### Added
@@ -18,5 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Custom exception hierarchy: `MLflowSHAPError`, `NoActiveRunError`, `ExplainerCreationError`.
 - Type hints + `py.typed` marker.
 
-[Unreleased]: https://github.com/princepongsakorn/mlflow-shap/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/princepongsakorn/mlflow-shap/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/princepongsakorn/mlflow-shap/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/princepongsakorn/mlflow-shap/releases/tag/v0.1.0
